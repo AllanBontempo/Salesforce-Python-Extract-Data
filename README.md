@@ -35,3 +35,8 @@ Dependencies:
        The report ID is the 15-18 character string near the end of the URL, e.g. for
        “https://yourcompany.my.salesforce.com/00O0X0000Aa4GO1” it is “00O0X0000Aa4GO1”.
 
+5. After all requirements done
+
+       Run the script start.py with python
+
+    `python start.py`
