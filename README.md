@@ -1,6 +1,17 @@
 ## Salesforce-Python-Extract-Data
 
 
+Dependencies: 
+<details>
+
+    pip3 install Salesforce
+    pip3 install requests
+    pip3 install pandas
+
+</details>
+
+
+
  Python using `simple_salesforce` package is an easy solution we found which allows users to download Salesforce **reports directly into Python** by making use of the ‘Salesforce’ function to log in programmatically and then using a GET function to retrieve the report.
 
 1. Your Salesforce Username and Password
