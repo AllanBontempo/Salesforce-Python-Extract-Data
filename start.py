@@ -1,14 +1,17 @@
-from datetime import datetime
-
+import json
 import pandas as pd
 import requests
+from datetime import datetime
 from simple_salesforce import Salesforce
 from io import StringIO
 
+with open('credentials.json') as f:
+    credentials = json.load(f)
+
 # LOGIN CREDENTIALS
-username = ''  # Put your e-mail
-password = ''  # Put your password
-security_token = ''  # Put your token. You can get on configurations in salesforce
+username = credentials['email']  # Put your e-mail
+password = credentials['password']  # Put your password
+security_token = credentials['security_token']  # Put your token. You can get on configurations in salesforce
 
 sf = Salesforce(username=username, password=password, security_token=security_token)
 sessionId = sf.session_id
